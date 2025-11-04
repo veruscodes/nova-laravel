@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\Repeater\Repeatable;
+
+class {{ class }} extends Repeatable
+{
+    /**
+     * Get the fields displayed by the repeatable.
+     *
+     * @return array<int, \Laravel\Nova\Fields\Field>
+     */
+    public function fields(NovaRequest $request): array
+    {
+        return [
+            //
+        ];
+    }
+}

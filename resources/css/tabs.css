@@ -1,0 +1,62 @@
+/*
+.tab-group + div {
+  @apply bg-white;
+}
+*/
+
+.relationship-tabs-panel.card .flex-no-shrink.ml-auto.mb-6 {
+  margin-bottom: 0;
+}
+
+.tab-group .tab-menu {
+  @apply relative z-0 bg-white dark:bg-gray-800 rounded-t-lg border-b mx-auto overflow-x-auto;
+  display: flex; /* Set flex display manually to circumvent tailwind circular dependency */
+}
+
+.tab-group .tab-item {
+  @apply relative min-w-min flex-shrink-0 flex-1 overflow-hidden bg-white dark:bg-gray-800 py-4 px-4 font-semibold text-center;
+}
+
+.tab-group .tab-item:not(:disabled) {
+  @apply cursor-pointer hover:bg-gray-50 hover:dark:bg-gray-700 focus:z-10 first:rounded-tl-lg last:rounded-tr-lg;
+}
+
+.tab-group .tab.fields-tab {
+  @apply py-2 px-6;
+}
+
+form .tab-group .tab.fields-tab {
+  @apply py-2 px-0;
+}
+
+.tab-group .tab-card {
+  @apply shadow bg-white dark:bg-gray-800 rounded-b-lg rounded-t-lg;
+}
+
+.tab-group .tab h1 {
+  @apply hidden;
+}
+
+.tab-group h1 + .flex {
+  @apply px-4 pt-4 pb-0;
+}
+
+.tab-group h1 + .flex > div.mb-6,
+.tab-group h1 + .flex > div > div.mb-6 {
+  @apply mb-0;
+}
+
+.tab-group h1 + .flex + div {
+  @apply shadow-none rounded-t-none rounded-b-lg;
+}
+
+.tab-group
+  .relationship-tab
+  input[type='search'][data-role='resource-search-input'] {
+  @apply bg-gray-100 dark:bg-gray-900;
+  @apply border-2 border-gray-100 dark:border-gray-900 shadow-none;
+}
+
+.tab-has-error:after {
+  content: ' *';
+}

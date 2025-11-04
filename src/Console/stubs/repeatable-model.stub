@@ -1,0 +1,29 @@
+<?php
+
+namespace {{ namespace }};
+
+use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\Repeater\Repeatable;
+
+class {{ class }} extends Repeatable
+{
+    /**
+     * The model the resource corresponds to.
+     *
+     * @var class-string<\{{ namespacedModel }}>
+     */
+    public static $model = \{{ namespacedModel }}::class;
+
+    /**
+     * Get the fields displayed by the repeatable.
+     *
+     * @return array<int, \Laravel\Nova\Fields\Field>
+     */
+    public function fields(NovaRequest $request): array
+    {
+        return [
+            // ID::hidden(),
+        ];
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": false,
+    "outDir": "resources/types",
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+  },
+  "include": [
+    "./resources/ui/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./resources/js/**/*"
+  ]
+}
